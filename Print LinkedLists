@@ -1,0 +1,13 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+void print(Node *head)
+{
+Node *current=head;
+while(current!=NULL)
+{
+cout<<current->data<<endl;
+current=current->next;
+}
+
+}
