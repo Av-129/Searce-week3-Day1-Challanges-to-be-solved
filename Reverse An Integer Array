@@ -1,0 +1,38 @@
+
+#include <bits/stdc++.h>
+using namespace std;
+
+void reverseGivenarray_Day1_task_Atsearce(int searce[],int strength, int s, int e)
+{
+	while (s<e)
+	{
+		int temp = searce[s];
+		searce[s] = searce[e];
+		searce[e] = temp;
+		s++;
+		e--;
+	}
+	for (int i=0;i<strength;i++)
+    cout << searce[i] << " ";
+}	
+
+
+
+int main()
+{
+    
+int strength;
+
+cin>>strength;
+
+int searce[strength];
+
+for(int i=0;i<strength;i++)
+    cin>>searce[i];
+
+reverseGivenarray_Day1_task_Atsearce(searce,strength, 0, strength-1);
+
+
+	
+	return 0;
+}
